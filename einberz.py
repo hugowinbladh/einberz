@@ -17,6 +17,6 @@ def einberz(image):
             berz = ImageOps.fit(berz, size, 0, 0, (0.0, 0.0))
             bg.paste(berz,(j*32+offset,i*32+offset))
     bg.save("out.jpg")
-print "enter your image's filename:"
+print "enter your image's filename: "
 filename = raw_input()
 einberz(filename)
